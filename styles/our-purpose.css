@@ -1,0 +1,362 @@
+main {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    align-content: center;
+    /* padding-top: 20%; */
+    height: 92vh;
+}
+
+div.img-wrapper {
+    grid-column: 1/4;
+    grid-row: 1;
+    background-image: url("/Assets/iranian-flag.png");
+    max-width: 100%;
+    height: 50vmax;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: scaleX(-1);
+    opacity: 75%;
+}
+
+.heroh1 {
+    grid-column: 4/1;
+    grid-row: 1/3;
+    z-index: 1;
+    font-size: var(--heroh1);
+    padding-right: var(--padding-rigt);
+    text-align: right;
+}
+
+p {
+    font-size: 1em;
+    letter-spacing: 1%;
+    line-height: 150%;
+}
+
+.storypart {
+    padding: 15% 3% 15% 3%;
+}
+
+.storyh1 {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 100;
+}
+
+.pContainer {
+    padding: 15% 3% 15% 3%;
+}
+
+section.storypart div>p,
+section.walfi div>p {
+    padding: 5% 0 5% 0;
+}
+
+div.imgtxt {
+    padding: 5% 0 5% 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+
+}
+
+.img-txt-item-img {
+    display: block;
+    grid-column: 1/3;
+    grid-row: 1;
+    opacity: 75%;
+    position: absolute;
+}
+
+
+#imgtxtimg1 {
+    background-image: url(/Assets/Flag_of_the_Ministry_of_Justice_\(Iran\).svg);
+    grid-column: 1/4;
+    grid-row: 1;
+    max-width: 100%;
+    height: 50vmax;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: 60%;
+    filter: contrast(90%);
+}
+
+
+.img-txt-item-txt {
+    grid-column: 5/2;
+    grid-row: 1;
+    text-align: right;
+    opacity: 99%;
+    padding-right: var(--padding-rigt);
+}
+
+#imgtxtimg2 {
+    grid-column: 1/4;
+    grid-row: 1;
+    background-image: url(/Assets/mahsa-amini.jpg);
+    max-width: 100%;
+    height: 50vmax;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: scaleX(-1);
+    opacity: 50%;
+    filter: contrast(50%);
+}
+
+#img-text-wrapper1,
+#img-text-wrapper2 {
+    height: 90vh;
+}
+
+.walfi {
+    padding-top: 30%;
+}
+
+.thefounder {
+    padding: 15% 0 15% 0;
+}
+
+.walfi h1,
+.thefounder h1 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.thefounder {
+    align-items: center;
+    text-align: center;
+}
+
+.thefounder>img {
+    max-width: 90%;
+    padding: 5% 6% 5% 6%;
+}
+
+.thefounder>p {
+    padding: 0 6% 0 6%;
+    font-size: 1rem;
+}
+
+.carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1%;
+    padding-top: 10%;
+    padding-bottom: 15%;
+}
+
+
+.img-text-container>div {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px red !important;
+    align-items: center;
+    justify-items: center;
+    text-align: right;
+}
+
+.img-text-container div>img {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: 85%;
+    max-height: 85%;
+    cursor: pointer;
+    opacity: 99%;
+    filter: contrast(90%);
+}
+
+.img-text-container div>h3 {
+    grid-column: 2/1;
+    grid-row: 1;
+    text-align: right;
+    z-index: 1;
+}
+
+.slogans {
+    padding: 15% 0 15% 0;
+}
+
+section.slogans>h1 {
+    text-transform: uppercase;
+}
+
+section.slogans>h1,
+p {
+    text-align: center;
+    padding: 5%;
+}
+
+#eng {
+    font-size: 1.35rem;
+}
+
+.slogans h1#per,
+.slogans h1#kur {
+    font-size: 2.5rem;
+}
+
+
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+    .hero {
+        padding-top: 0;
+    }
+
+    .heroh1 {
+        font-size: 4rem;
+    }
+
+    .storyh1 {
+        font-size: 2rem;
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+
+    p {
+        font-size: 1.5em;
+        letter-spacing: 1%;
+        line-height: 150%;
+    }
+
+    .pContainer,
+    section.thefounder>p {
+        padding: 5% 10% 15% 10%;
+
+    }
+
+    section.storypart div>p,
+    section.walfi div>p,
+    section.thefounder>p {
+        padding: 3% 10 3% 10;
+    }
+
+    .pContainer {
+        padding: 0% 10% 5% 10%;
+
+    }
+
+    .walfi>h1,
+    .thefounder>h1 {
+        font-size: 1.85rem;
+    }
+
+    .thefounder>img {
+        padding: 1% 6% 0% 6%;
+    }
+
+    .thefounder>p {
+        font-size: 1.5rem;
+    }
+
+    section.slogans>h1 {
+        text-align: center;
+        padding: 2%;
+        font-size: 2rem;
+    }
+
+    .slogans h1#eng {
+        font-size: 2rem;
+    }
+
+
+    .slogans h1#per,
+    .slogans h1#kur {
+        font-size: 3rem;
+    }
+
+
+}
+
+
+
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+
+    .heroh1 {
+        font-size: 5rem;
+    }
+
+    .storyh1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.55rem;
+        letter-spacing: 1%;
+        line-height: 150%;
+    }
+
+
+    .walfi>h1,
+    .thefounder>h1 {
+        font-size: 2.25rem;
+    }
+
+    div.imgtxt {
+        padding: 5% 5% 5% 5%;
+        margin-bottom: 5%;
+        position: relative;
+    }
+
+    #imgtxtimg1,
+    #imgtxtimg2 {
+        max-width: 70%;
+    }
+
+    .storypart {
+        padding: 10% 0 0% 0;
+    }
+
+
+    .imgtxt,
+    .walfi,
+    .thefounder,
+    .slogans {
+        padding: 5% 0 5% 0
+    }
+
+
+    .carousel {
+        padding: 0 0 0 1%;
+    }
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+    p {
+        font-size: 1.75rem;
+        letter-spacing: 1%;
+        line-height: 150%;
+    }
+
+    section.storypart div>p,
+    section.walfi div>p {
+        padding: 2% 5% 2% 5%;
+    }
+
+    .walfi>h1,
+    .thefounder>h1 {
+        font-size: 3.25rem;
+    }
+
+    section.thefounder>p {
+        font-size: 1.85rem;
+        padding: 1% 20% 0% 20%;
+    }
+
+
+}

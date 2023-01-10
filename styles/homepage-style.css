@@ -1,0 +1,73 @@
+.hero {
+    position: relative;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    padding-top: 5%;
+    height: 100vh;
+}
+
+.heroimg {
+    max-height: 100%;
+    width: 100%;
+    float: left;
+    grid-column: 1/6;
+}
+
+.heroh1 {
+    padding-top: 5%;
+    font-weight: 550;
+    font-size: 5.5vw;
+    grid-column: 1/6;
+    letter-spacing: 0.05em;
+}
+
+.farsi {
+    padding-top: 17%;
+    font-size: 10vw;
+    letter-spacing: .5vw;
+    grid-column: 1/6;
+}
+
+.heroimg,
+.heroh1,
+.farsi {
+    grid-row: 1/2;
+    align-self: center;
+}
+
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+    .hero {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .heroimg {
+        max-width: 60vmax;
+    }
+
+    .heroh1 {
+        padding-top: 5%;
+        font-weight: 550;
+        font-size: 5vw;
+        grid-column: 1/6;
+        letter-spacing: 0.05em;
+    }
+
+    .farsi {
+        padding-top: 20%;
+        font-size: 10vw;
+        letter-spacing: .5vw;
+        grid-column: 1/6;
+    }
+
+}
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+    .heroimg {
+        max-width: 35vmax;
+    }
+}

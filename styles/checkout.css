@@ -1,0 +1,44 @@
+label {
+
+    color: white;
+  
+    font-family: 'Monument Extended', sans-serif;
+  }
+  
+  
+  .form { 
+  
+  
+  display: grid;
+  
+  
+  }
+
+  img {
+
+    width: 100%;
+  }
+
+button {
+    background-color:white; 
+    border: none;
+    color: black;
+    padding: 16px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'Monument Extended', sans-serif;
+  }
+  
+.buttons {
+
+
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 200px;
+
+}
